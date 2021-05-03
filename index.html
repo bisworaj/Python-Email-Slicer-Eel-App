@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Python Email Slicer</title>
+    <link rel="stylesheet" href="./web/style.css" />
+    <link rel="shortcut icon" href="./web/Accounts.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="main-section">
+      <header>
+        <div class="top">
+          <div class="logo">
+            <img src="./web/Accounts.ico" alt="@" width="80px;" />
+            <h4>Python Email Slicer</h4>
+          </div>
+          <div class="info">
+            <a href="https://github.com/bisworaj/Python-Email-Slicer-Eel-App"><h4>GitHub repo</h4></a>
+            <h4 id="open">Learn More</h4>
+          </div>
+        </div>
+      </header>
+      <div class="next-part">
+        <div class="functional-part">
+          <div class="main">
+            <form action="" id="main">
+              <label for="">Enter User Eamil</label>
+              <div class="form-control input">
+                <input type="email" id="email"/>
+                <button id="btn" >slice</button>
+              </div>
+              <div class="form-control output">
+                <input type="text" id="output" disabled />
+              </div>
+              <small id="warning">error</small>
+            </form>
+          </div>
+          <div class="instruction">
+            <h4>Instructions</h4>
+            <p>This is a very simple Email Slicer. This performs a very simple task. We take an Email address from the user and we slice the email address to get the username and domain name.</p>
+            <p>Then we output the username and domain name back to the user.</p>
+            <p>The first input field takes an email as input from user and then we run a Python string procesing code to find the the '@' symbol which separate the username and domain name.</p>
+            <p>Then we slice the email address in 2 parts which is printed inside the output filed.</p>
+            <br>
+            <p>A sample output will look like this</p>
+            <p>Email address : <b>email@example.com</b></p>
+            <p>Username : <b>email</b></p>
+            <p>Domain name : <b>example.com</b></p>
+          </div>
+        </div>
+        <div class="about-part">
+          <h4>about the app</h4>
+          <p>This <b>'Python Email Slicer'</b> app is a simple Interactive Browser bassed app powerd by Python.</p>
+          <p>in this app we are implimenting Python Eel library to create UI for Python program using HTML and CSS.
+            the Eel allows us to create web Application where the progrm logic runs behind in python. The data/arguments pass on to the 
+            python from javascript through the browser. the javascript program basically connects the UI to the python progarm using
+            functions which are trigerred by the events on the browser.
+          </p>
+          <img src="data_pass_expalin.jpg" alt="">
+          <hr>
+          <ol>
+            <li>First the user email is recived through the input field and goes to javascript</li>
+            <li>the email is verifyed by the javascript by some validation functions</li>
+            <li>then javascript passes the email as an argument to the python script.</li>
+            <li>The string processing function is executed in the python script</li>
+            <li>the eel comunicates with javascript and retuns the result using a callback function</li>
+            <li>the desired output is then printed in the DOM.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section class="second-section">
+      <div class="popup-container" id="container">
+        <div class="popup">
+            <button id="close">&times;</button>
+            <img src="eatm_logo.png" alt="eatm">
+            <div>
+              <h4>About The Project</h4>
+              <p>This Application is a working model  for 8th sem final project submision.</p>
+              <p>This project is built under the guidance of <b>Mr. Alok Mishra</b> and well tested for deployment.</p>
+            </div>
+            <hr>
+            <h4>Project Developers</h4>
+            <div class="devs">
+              <div class="dev">
+                <img src="./web/bb.jpg">
+                <h5>Biswajit Behera</h5>
+              </div>
+              <div class="dev">
+                <img src="./web/bs.jpg">
+                <h5>Bisworaj Saheb</h5>
+              </div>
+              <div class="dev">
+                <img src="./web/akp.jpg">
+                <h5>Aswini Kumar Pothal</h5>
+              </div>
+              <div class="dev">
+                <img src="./web/ap.jpg">
+                <h5>Aditee Padhan</h5>
+              </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script type="text/javascript" src="/eel.js"></script>
+    <script src="./web/app.js"></script>
+  </body>
+</html>
