@@ -1,13 +1,13 @@
 
 #### HTML User Interface for python using Eel Library
 
-In this app we are implimenting Python Eel Libary to create UI for python program using HTML, CSS and javaScript.
+In this app we are implementing Python Eel Libary to create UI for python program using HTML, CSS and javaScript.
 
 To put is simply the eel library is used to create HTML UI for Python applications. While there are tools such as Tkinter, where the GUI can be coaded in python but the limitations are quite high and does not give as much as freedom as we get from  using HTML and CSS.
 
-for more refference visit these articles from [medium](https://medium.com/@utsav_datta/create-html-user-interface-for-python-using-eel-library-bab101cc0f99) and [Nitratine](https://nitratine.net/blog/post/python-gui-using-chrome/).
+for more reference visit these articles from [medium](https://medium.com/@utsav_datta/create-html-user-interface-for-python-using-eel-library-bab101cc0f99) and [Nitratine](https://nitratine.net/blog/post/python-gui-using-chrome/).
 
-##### Implimenting the Library
+##### Implementing the Library
 
 In this App we are going to create python Email Slicer with a interactive UI and then converting it into .exe so that it can be shared.
 
@@ -38,7 +38,7 @@ In **"App.py"** file we import and initialize eel.
     eel.init('web')
     eel.start('index.html')
 ```
-we can include options as arguments inside `eel.start()` such as size,host,port etc.
+we can include options as arguments inside `eel.start()` such as size, host, port etc.
 Before starting the "index.html" we will expose it to javascript and add the logic to the python file which will process the input passed by the javascript file.
 ```python
     @eel.expose
@@ -62,7 +62,7 @@ for communication with python we need to put a javaScript file in our HTML.
 ```
 This will allow javaScript and python to communicate as the client.
 
-In our javaScript file we select DOM elements and and Trigger events on them. The javaScript file should collect the input data from DOM and pass it to the Python file.
+In our javaScript file we select DOM elements and Trigger events on them. The javaScript file should collect the input data from DOM and pass it to the Python file.
 
 ```javascript
     const input = document.getElementbyId('inut');
