@@ -1,7 +1,7 @@
 
 #### HTML User Interface for python using Eel Library
 
-In this app we are implimenting Python Eel Libary to create UI for python program using HTML, CSS and javaScript.
+In this app we are implimenting Python Eel Libary to create UI for python program using HTML, CSS and javaScript. [check out the web version](https://bisworaj.github.io/Python-Email-Slicer-Eel-App/)
 
 To put is simply the eel library is used to create HTML UI for Python applications. While there are tools such as Tkinter, where the GUI can be coaded in python but the limitations are quite high and does not give as much as freedom as we get from  using HTML and CSS.
 
